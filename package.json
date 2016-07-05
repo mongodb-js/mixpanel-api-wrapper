@@ -8,6 +8,9 @@
     "test": "mocha",
     "ci": "npm run check && npm test"
   },
+  "bin": {
+    "mixpanel-api-wrapper": "./bin/cli.js"
+  },
   "homepage": "http://github.com/mongodb-js/mixpanel-jql",
   "repository": {
     "type": "git",
@@ -18,7 +21,9 @@
   },
   "dependencies": {
     "highland": "^2.8.1",
-    "mixpanel-data-export": "^1.8.2"
+    "mixpanel-data-export": "^1.8.2",
+    "sinon": "^1.17.4",
+    "yargs": "^4.7.1"
   },
   "devDependencies": {
     "eslint-config-mongodb-js": "^1.0.6",
