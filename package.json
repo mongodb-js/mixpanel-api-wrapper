@@ -16,7 +16,10 @@
   "bugs": {
     "url": "git://github.com/mongodb-js/mixpanel-jql.git/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "highland": "^2.8.1",
+    "request": "^2.72.0"
+  },
   "devDependencies": {
     "eslint-config-mongodb-js": "^1.0.6",
     "mocha": "^2.3.4",
