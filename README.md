@@ -1,10 +1,23 @@
-# mixpanel-jql [![travis][travis_img]][travis_url] [![npm][npm_img]][npm_url]
+# mixpanel-api-wrapper [![travis][travis_img]][travis_url] [![npm][npm_img]][npm_url]
 
-> wrapper around the mixpanel-data-export module to create an easy interface for retrieiving the results of JQL queries in Mixpanel
+> wrapper around the mixpanel data export API to create an easy interface for retrieiving the results of JQL queries and funnel data in Mixpanel
+
+## Install
+
+```js
+npm install mixpanel-api-wrapper
+```
 
 ## Example
 
-```javascript
+```js
+var mixpanel = require('mixpanel-api-wrapper');
+
+//retrieve results from JQL query
+var results1 = mixpanel.mixpanelJQL(<apiSecret>, <jqlQuery>);
+
+//retrieve results from hitting funnels endpoint of API
+var results2 = mixpanel.mixpanelFunnel(<apiSecret>, <funnelID>);
 ```
 
 ## License
