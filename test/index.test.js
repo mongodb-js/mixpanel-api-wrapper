@@ -12,7 +12,7 @@ describe('functional tests', function() {
     assert(mixpanel);
   });
 
-  it('jql functional test', function(done) {
+  it('jql functional test - testing return of data given appLaunches query on July 9-10', function(done) {
     var query = vars.query;
     var jqlObj = vars.jqlObj;
     var str = mixpanel.mixpanelJQL(secret, query);
@@ -24,7 +24,7 @@ describe('functional tests', function() {
     });
   });
 
-  it('funnels functional test', function(done) {
+  it('funnels functional test - testing return of data on update flow on June 6-7', function(done) {
     var funnelID = vars.funnelID;
     var funnelObj = vars.funnelObj;
     var params = vars.funnelParams;
@@ -59,7 +59,7 @@ describe('unittests jql', function() {
     assert(str.on);
   });
 
-  it('should return a stream with the value of request.get', function(done) {
+  it('should return a stream with the results of the API call', function(done) {
     var str = mixpanel.mixpanelJQL();
     str.on('data', function(chunk) {
       assert.deepEqual(chunk, vars.jqlObj);
@@ -91,7 +91,7 @@ describe('unittests funnels', function() {
     assert(str.on);
   });
 
-  it('should return a stream with the value of request.get', function(done) {
+  it('should return a stream with the results of the API call', function(done) {
     var str = mixpanel.mixpanelFunnel();
     str.on('data', function(chunk) {
       assert.deepEqual(chunk, vars.funnelObj);
