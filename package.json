@@ -1,5 +1,5 @@
 {
-  "name": "mixpanel-jql",
+  "name": "mixpanel-api-wrapper",
   "description": "wrapper around the mixpanel-data-export module to create an easy interface for retrieiving the results of JQL queries in Mixpanel",
   "version": "0.0.0",
   "scripts": {
@@ -8,13 +8,13 @@
     "test": "mocha",
     "ci": "npm run check && npm test"
   },
-  "homepage": "http://github.com/mongodb-js/mixpanel-jql",
+  "homepage": "http://github.com/mongodb-js/mixpanel-api-wrapper",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mongodb-js/mixpanel-jql.git"
+    "url": "git://github.com/mongodb-js/mixpanel-api-wrapper.git"
   },
   "bugs": {
-    "url": "git://github.com/mongodb-js/mixpanel-jql.git/issues"
+    "url": "git://github.com/mongodb-js/mixpanel-api-wrapper.git/issues"
   },
   "dependencies": {
     "highland": "^2.8.1",
