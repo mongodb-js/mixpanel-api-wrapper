@@ -1,7 +1,7 @@
 {
   "name": "mixpanel-api-wrapper",
   "description": "wrapper around the mixpanel-data-export module to create an easy interface for retrieiving the results of JQL queries in Mixpanel",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "fmt": "mongodb-js-fmt",
     "check": "mongodb-js-precommit",
