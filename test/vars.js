@@ -1,9 +1,10 @@
 /* eslint no-undef:0 */
 /* eslint new-cap:0 */
+/* eslint-env es6 */
 
 module.exports = {
   secret: process.env.MIX_SECRET,
-  query: function main() {
+  query: `function main() {
     return Events({
       from_date: '2016-07-09',
       to_date: '2016-07-10'
@@ -12,7 +13,7 @@ module.exports = {
         return event.name === 'App launched';
       })
       .groupBy(['name'], mixpanel.reducer.count());
-  },
+  }`,
   jqlObj: {
     key: ['App launched'],
     value: 92
